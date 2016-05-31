@@ -1,0 +1,83 @@
+* {
+  margin: 0px;
+}
+.header {
+  text-align: center;
+   font-size: 16px;
+}
+.btn {
+  margin: 0 auto;
+  display: block;
+  height: 50px;
+  width: 325px;
+  background-color: #cfe2f3;
+  border: 2px solid black;
+  font-size: 16px;
+}
+
+form {
+  padding-top: 25px;
+  font-family: sans-serif;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  background-color: white;
+  font-size: 14px;
+  line-height: 25px;
+}
+form li {
+  font-size: 16px;
+}
+form ol {
+  margin: 20px 0px;
+}
+.question ol{
+  list-style: lower-latin;
+}
+
+.modal {
+  background-color:  white;
+  padding: 25px;
+  width: 600px;
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+  margin: 50px auto;
+  overflow: hidden;
+  }
+
+.modal-header .close {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+}
+.close {
+  float: right;
+
+}
+.modal-footer,
+.modal-header {
+  text-align: center;
+}
+
+.modal-body {
+  margin: 10px 0px;
+}
+
+.modal-wrapper {
+      position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+  display: none;
+  z-index: 1;
+}
+
+.shadow {
+  position: fixed;
+ top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+}

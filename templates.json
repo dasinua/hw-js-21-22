@@ -1,0 +1,4 @@
+{
+    "questionTmpl" : "\n      <li class=\"question\"><%=title %>\n      <ol>\n       <% for(var i=0;i<answers.length;i++) {%>\n        <li> \n          <input type=\"radio\" name=\"questions[<%=questionIndex %>]\" value=\"<%=i %>\" id=\"\"><%=answers[i] %>\n        </li>\n        <% } %>\n      </ol>\n    </li>\n  ",
+    "resultTmpl" : "\n      <li class=\"result\">  <%=result %>    </li>\n  "
+}

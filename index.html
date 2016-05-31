@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hw-js-21-22</title>
+<!--  <link rel="stylesheet" href="css/reset.css">-->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4.11.1/lodash.js"></script>
+  <script src="js/script.js"></script>
+
+  <script id="tmplQuestion" type="text/teamplate">
+      <li class="question"><%=title %>
+      <ol>
+       <% for(var i=0;i<answers.length;i++) {%>
+        <li>
+         <input type="radio" name="questions[<%=questionIndex %>]" value="<%=i %>" id=""><%=answers[i] %>
+        </li>
+        <% } %>
+      </ol>
+    </li>
+  </script>
+   <script id="tmplResult" type="text/teamplate">
+      <li class="result">  <%=result %>    </li>
+  </script>
+
+</head>
+<body>
+ <div class="modal-wrapper" id="resultModal">
+  <div class="modal" >
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <h3>Результат  теста.</h3>
+    </div>
+    <div class="modal-body">
+      <ol></ol>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="close" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+ </div>
+<form id="test">
+  <div class="header">Тест по программированию</div>
+  <ol class="questions">
+
+  </ol>
+  <input id = "submitTest" type="submit" value="Проверить мои результаты" class="btn" data-toggle="modal" data-target="#resultModal">
+</form>
+<!--  <script src="js/scrypt.js"></script>-->
+
+</body>
+</html>
