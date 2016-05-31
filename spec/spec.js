@@ -18,7 +18,7 @@ describe("Test my created classes andt their metods", function() {
 
 //Получаю с сервера шаблоны, чтобы сровнить их
        $.ajax(
-            {url: "http://ivanov-aleksander.github.io/js20-21/templates.json",
+            {url: "http://dasinua.github.io/hw-js-21-22/templates.json",
             async: false,
             success: function(data) {
                      response = data;
@@ -35,7 +35,7 @@ describe("Test my created classes andt their metods", function() {
                            };
 
 //      act
-      test.initQestions("http://ivanov-aleksander.github.io/js20-21/questions.json");
+      test.initQestions("http://dasinua.github.io/hw-js-21-22/questions.json");
       var resultQuestion = test.questions[2];
 
 
@@ -52,7 +52,7 @@ describe("Test my created classes andt their metods", function() {
 
 //Получаю с сервера шаблоны, чтобы сровнить их
        $.ajax(
-            {url: "http://ivanov-aleksander.github.io/js20-21/templates.json",
+            {url: "http://dasinua.github.io/hw-js-21-22/templates.json",
             async: false,
             success: function(data) {
                      response = data;
@@ -60,9 +60,10 @@ describe("Test my created classes andt their metods", function() {
             }
             });
 
-           test.initTemplate("http://ivanov-aleksander.github.io/js20-21/templates.json");
+           test.initTemplate("http://dasinua.github.io/hw-js-21-22/templates.json");
            var resulTmplQuestion = test.questionTmpl;
            expect(resulTmplQuestion).toEqual(questionTmpl);
 
       });
 });
+
