@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jquery": "^2.2.4",
+    "jquery": "^3.4.0",
     "jsdom": "^9.2.0",
     "lodash": "^4.13.1"
   }
